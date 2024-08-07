@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/tag.css">
+
+    <title>Tag Input</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="head mb-5">
+            <h2 class="page-section-heading text-center text-uppercase">Healthcare Predictive Analytics for Disease</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+        </div>
+        <div class="input-group my-4">
+            <span class="input-group-text">First and Last Name</span>
+            <input type="text" aria-label="First name" class="form-control">
+            <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <div class="input-group flex-nowrap my-4">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input type="text" class="form-control" placeholder="Enter Email-id" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <div class="row g-3 align-items-center my-4">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Contact No.</label>
+            </div>
+            <div class="col-auto">
+              <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Must be 10 digit long.
+              </span>
+            </div>
+          </div>
+        <div class="tag-container">
+            <div class="title">
+                <h2>Enter Symptoms</h2>
+            </div>
+            <div class="content">
+                <p>Press enter or add a coma after each tag</p>
+                <div class="tag-box">
+                    <ul>
+                        <input type="text">
+                    </ul>
+                    <ol class="list"></ol>
+                </div>
+            </div>
+            <div class="details">
+                <p><span></span> minimum tags are remaining</p>
+                <button>Remove All</button>
+            </div>
+        </div>
+        <div class="submit">
+            <button id="submit">Submit</button>
+        </div>
+        <a class="btn btn-secondary" href="/">&lt;&lt; Go back</a>
+    </div>
+
+    <script src="/static/js/tag.js"></script>
+</body>
+
+</html>
